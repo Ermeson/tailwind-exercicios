@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Uma coleção de imagens para inspirar seus próximos exercícios de interface."
+    />
+    <title>Tailwind Exercises</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .image-slide {
+        min-height: 100vh;
+        min-height: 100svh;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+      }
+
+      .image-slide img {
+        max-height: calc(100vh - 4rem);
+        max-height: calc(100svh - 4rem);
+      }
+
+      .first-slide img {
+        max-height: calc(100vh - 8rem);
+        max-height: calc(100svh - 8rem);
+      }
+
+      .image-slide[aria-current="true"] span {
+        font-weight: 700;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black antialiased">
+    <main aria-label="Lista de imagens para os exercícios">
+      <ol>
+        <li class="image-slide first-slide relative flex items-center justify-center bg-white p-4 sm:p-8" aria-current="true">
+          <h1 class="absolute left-5 top-5 text-2xl font-semibold tracking-tight sm:left-8 sm:top-8 sm:text-3xl">
+            Tailwind Exercises
+          </h1>
+          <span
+            class="absolute right-5 top-5 z-10 text-sm font-medium tabular-nums sm:right-8 sm:top-8 sm:text-base"
+            aria-label="Imagem 1"
+          >01</span>
+          <img
+            class="h-auto w-full max-w-7xl object-contain"
+            src="imgs/01.webp"
+            alt="Exercício visual 01"
+            fetchpriority="high"
+          />
+        </li>
+        <li class="image-slide relative flex items-center justify-center bg-white p-4 sm:p-8">
+          <span
+            class="absolute left-5 top-5 z-10 text-sm font-medium tabular-nums sm:left-8 sm:top-8 sm:text-base"
+            aria-label="Imagem 2"
+          >02</span>
+          <img
+            class="h-auto w-full max-w-7xl object-contain"
+            src="imgs/02.webp"
+            alt="Exercício visual 02"
+            loading="lazy"
+          />
+        </li>
+        <li class="image-slide relative flex items-center justify-center bg-white p-4 sm:p-8">
+          <span
+            class="absolute left-5 top-5 z-10 text-sm font-medium tabular-nums sm:left-8 sm:top-8 sm:text-base"
+            aria-label="Imagem 3"
+          >03</span>
+          <img
+            class="h-auto w-full max-w-7xl object-contain"
+            src="imgs/03.webp"
+            alt="Exercício visual 03"
+            loading="lazy"
+          />
+        </li>
+        <li class="image-slide relative flex items-center justify-center bg-white p-4 sm:p-8">
+          <span
+            class="absolute left-5 top-5 z-10 text-sm font-medium tabular-nums sm:left-8 sm:top-8 sm:text-base"
+            aria-label="Imagem 4"
+          >04</span>
+          <img
+            class="h-auto w-full max-w-7xl object-contain"
+            src="imgs/04.webp"
+            alt="Exercício visual 04"
+            loading="lazy"
+          />
+        </li>
+        <li class="image-slide relative flex items-center justify-center bg-white p-4 sm:p-8">
+          <span
+            class="absolute left-5 top-5 z-10 text-sm font-medium tabular-nums sm:left-8 sm:top-8 sm:text-base"
+            aria-label="Imagem 5"
+          >05</span>
+          <img
+            class="h-auto w-full max-w-7xl object-contain"
+            src="imgs/05.webp"
+            alt="Exercício visual 05"
+            loading="lazy"
+          />
+        </li>
+        <li class="image-slide relative flex items-center justify-center bg-white p-4 sm:p-8">
+          <span
+            class="absolute left-5 top-5 z-10 text-sm font-medium tabular-nums sm:left-8 sm:top-8 sm:text-base"
+            aria-label="Imagem 6"
+          >06</span>
+          <img
+            class="h-auto w-full max-w-7xl object-contain"
+            src="imgs/06.webp"
+            alt="Exercício visual 06"
+            loading="lazy"
+          />
+        </li>
+        <li class="image-slide relative flex items-center justify-center bg-white p-4 sm:p-8">
+          <span
+            class="absolute left-5 top-5 z-10 text-sm font-medium tabular-nums sm:left-8 sm:top-8 sm:text-base"
+            aria-label="Imagem 7"
+          >07</span>
+          <img
+            class="h-auto w-full max-w-7xl object-contain"
+            src="imgs/07.webp"
+            alt="Exercício visual 07"
+            loading="lazy"
+          />
+        </li>
+        <li class="image-slide relative flex items-center justify-center bg-white p-4 sm:p-8">
+          <span
+            class="absolute left-5 top-5 z-10 text-sm font-medium tabular-nums sm:left-8 sm:top-8 sm:text-base"
+            aria-label="Imagem 8"
+          >08</span>
+          <img
+            class="h-auto w-full max-w-7xl object-contain"
+            src="imgs/08.webp"
+            alt="Exercício visual 08"
+            loading="lazy"
+          />
+        </li>
+        <li class="image-slide relative flex items-center justify-center bg-white p-4 sm:p-8">
+          <span
+            class="absolute left-5 top-5 z-10 text-sm font-medium tabular-nums sm:left-8 sm:top-8 sm:text-base"
+            aria-label="Imagem 9"
+          >09</span>
+          <img
+            class="h-auto w-full max-w-7xl object-contain"
+            src="imgs/09.webp"
+            alt="Exercício visual 09"
+            loading="lazy"
+          />
+        </li>
+        <li class="image-slide relative flex items-center justify-center bg-white p-4 sm:p-8">
+          <span
+            class="absolute left-5 top-5 z-10 text-sm font-medium tabular-nums sm:left-8 sm:top-8 sm:text-base"
+            aria-label="Imagem 10"
+          >10</span>
+          <img
+            class="h-auto w-full max-w-7xl object-contain"
+            src="imgs/10.webp"
+            alt="Exercício visual 10"
+            loading="lazy"
+          />
+        </li>
+      </ol>
+    </main>
+    <script>
+      const slides = document.querySelectorAll(".image-slide");
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+
+              slides.forEach((slide) => slide.removeAttribute("aria-current"));
+              entry.target.setAttribute("aria-current", "true");
+            }
+          },
+          { threshold: 0.6 },
+        );
+
+        slides.forEach((slide) => observer.observe(slide));
+      }
+    </script>
+  </body>
+</html>
